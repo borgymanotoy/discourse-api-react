@@ -31,6 +31,8 @@ class ForumSearchForm extends Component {
             key: this.state.key
         };
 
+        const self = this;
+
         axiosInstance({
             method: 'post',
             url: this.state.action,
@@ -38,7 +40,8 @@ class ForumSearchForm extends Component {
         })
         .then(function (response) {
             console.log(response);
-            this.setState({ ticketDetails: response.data });
+            self.setState({ ticketDetails: response.data });
+            //this.setState({ ticketDetails: response.data });
         })
         .catch(function (error) {
             console.log(error);
