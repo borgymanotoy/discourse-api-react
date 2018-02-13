@@ -6,7 +6,7 @@ import qs from "qs";
 class ForumSearchForm extends Component {
     constructor(props) {
         super(props);
-        this.state = {action: 'http://localhost:8080/api/forum-ticket', forum: 'http://testforum.peplink.com/t/welcome-to-discourse/8/4', key: '9b4e8c82beab1c7cf3e679037bb7beee446db5f8865ffa641236021b6b45e8bf', ticketDetails:null};
+        this.state = {action: 'https://discourse-api-ticket.herokuapp.com/api/forum-ticket', forum: 'https://meta.discourse.org/t/limit-one-post-per-person/80072', key: '', ticketDetails:null};
         this.handleForumChange = this.handleForumChange.bind(this);
         this.handleApiKeyChange = this.handleApiKeyChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
