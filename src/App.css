@@ -23,11 +23,19 @@
 }
 
 span.field {
+  font-size: large;
   display: inline-block;
   padding: 5px;
 }
 
-span.fieldLabel {
+p > span.fieldLabel {
+  font-size: large;
+  width: 200px;
+}
+
+div > span.fieldLabel {
+  font-size: large;
+  font-weight: bold;
   width: 200px;
 }
 

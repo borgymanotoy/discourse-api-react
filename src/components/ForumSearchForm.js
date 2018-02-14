@@ -76,7 +76,7 @@ class ForumSearchForm extends Component {
                                 <span className="historyItemMessage">{obj.message}</span>
                                 <span className="historyItemUser">{obj.user}</span>
                                 <span className="historyItemDate">{obj.date}</span>
-                                <span className="historyItemLink">{obj.link}</span>
+                                <span className="historyItemLink"><a href={obj.link} target="_blank">{obj.link}</a></span>
                             </div>
                         </td>
                     </tr>
@@ -120,12 +120,12 @@ class ForumSearchForm extends Component {
                             <span className="col-lg-4 field fieldLabel"><strong>Contact:</strong></span>
                             <span className="col-lg-8 field">{this.state.ticketDetails.contactName ? this.state.ticketDetails.contactName : "n/a"}</span>
                         </p>
-                        <p>
+                        <div>
                             <span className="col-lg-4 field fieldLabel"><strong>Emails:</strong></span>
                             <ul className="col-lg-8">
                                 {emailItems}
                             </ul>
-                        </p>
+                        </div>
                         <p>
                             <span className="col-lg-4 field fieldLabel"><strong>Type:</strong></span>
                             <span className="col-lg-8 field">{this.state.ticketDetails.type ? this.state.ticketDetails.type : "n/a"}</span>
@@ -138,15 +138,16 @@ class ForumSearchForm extends Component {
                             <span className="col-lg-4 field fieldLabel"><strong>Details:</strong></span>
                             <span className="col-lg-8 field">{this.state.ticketDetails.details ? this.state.ticketDetails.details : "n/a"}</span>
                         </p>
-                        <p>
+                        <div>
                             <span className="col-lg-4 field fieldLabel"><strong>History:</strong></span>
                             <table className="col-lg-8">
                                 <tbody>
                                     {historyItems}
                                 </tbody>
                             </table>
-                        </p>
+                        </div>
                     </div>
+                    <a href="/" className="btn btn-primary btn-lg">Back</a>
                 </div>
             );
         }
