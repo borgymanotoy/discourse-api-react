@@ -115,7 +115,7 @@ class ForumSearchForm extends Component {
                         </div>
                         <div className="row">
                             <span className="col-lg-4 field fieldLabel"><strong>Forum Link</strong></span>
-                            <span className="col-lg-8 field">{this.state.ticketDetails.forumLink}</span>
+                            <span className="col-lg-8 field"><a href={this.state.ticketDetails.forumLink} target="_blank">{this.state.ticketDetails.forumLink}</a></span>
                         </div>
                         <div className="row">
                             <span className="col-lg-4 field fieldLabel"><strong>Contact:</strong></span>
