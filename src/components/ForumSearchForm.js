@@ -103,42 +103,43 @@ class ForumSearchForm extends Component {
             return(
                 <div align="left">
                     <h3><strong>Ticket Details</strong></h3>
-                    <div className="row">
-                        <p>
+                    <hr/>
+                    <div>
+                        <div className="row">
                             <span className="col-lg-4 field fieldLabel"><strong>Subject</strong></span>
                             <span className="col-lg-8 field">{this.state.ticketDetails.subject}</span>
-                        </p>
-                        <p>
+                        </div>
+                        <div className="row">
                             <span className="col-lg-4 field fieldLabel"><strong>Topic Date</strong></span>
                             <span className="col-lg-8 field">{this.state.ticketDetails.topicDate}</span>
-                        </p>
-                        <p>
+                        </div>
+                        <div className="row">
                             <span className="col-lg-4 field fieldLabel"><strong>Forum Link</strong></span>
                             <span className="col-lg-8 field">{this.state.ticketDetails.forumLink}</span>
-                        </p>
-                        <p>
+                        </div>
+                        <div className="row">
                             <span className="col-lg-4 field fieldLabel"><strong>Contact:</strong></span>
                             <span className="col-lg-8 field">{this.state.ticketDetails.contactName ? this.state.ticketDetails.contactName : "n/a"}</span>
-                        </p>
-                        <div>
+                        </div>
+                        <div className="row">
                             <span className="col-lg-4 field fieldLabel"><strong>Emails:</strong></span>
                             <ul className="col-lg-8">
                                 {emailItems}
                             </ul>
                         </div>
-                        <p>
+                        <div className="row">
                             <span className="col-lg-4 field fieldLabel"><strong>Type:</strong></span>
                             <span className="col-lg-8 field">{this.state.ticketDetails.type ? this.state.ticketDetails.type : "n/a"}</span>
-                        </p>
-                        <p>
+                        </div>
+                        <div className="row">
                             <span className="col-lg-4 field fieldLabel"><strong>Serial Number:</strong></span>
                             <span className="col-lg-8 field">{this.state.ticketDetails.serialNo ? this.state.ticketDetails.serialNo : "n/a"}</span>
-                        </p>
-                        <p>
+                        </div>
+                        <div className="row">
                             <span className="col-lg-4 field fieldLabel"><strong>Details:</strong></span>
                             <span className="col-lg-8 field">{this.state.ticketDetails.details ? this.state.ticketDetails.details : "n/a"}</span>
-                        </p>
-                        <div>
+                        </div>
+                        <div className="row">
                             <span className="col-lg-4 field fieldLabel"><strong>History:</strong></span>
                             <table className="col-lg-8">
                                 <tbody>
