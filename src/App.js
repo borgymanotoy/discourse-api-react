@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import logo from './ploverbay.png';
-import ForumSearchForm from './ForumSearchForm.js';
+import logo from './images/ploverbay.png';
+import ForumSearchForm from './components/ForumSearchForm.js';
 import './App.css';
 
 class App extends Component {

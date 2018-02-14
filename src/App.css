@@ -22,6 +22,46 @@
   font-size: large;
 }
 
+span.field {
+  display: inline-block;
+  padding: 5px;
+}
+
+span.fieldLabel {
+  width: 200px;
+}
+
+span.historyItemMessage {
+  font-size: large;
+  display: block;
+  padding: 5px;
+}
+
+span.historyItemUser {
+  font-size: medium;
+  display: inline-block;
+  padding: 5px;
+}
+
+span.historyItemDate {
+  font-size: medium;
+  display: inline-block;
+  padding: 5px;
+  width: 150px;
+}
+
+span.historyItemLink {
+  font-size: small;
+  display: block;
+  padding: 5px;
+}
+
+div.historyItem {
+  margin-top: 10px;
+  padding: 25px;
+  border: 1px dotted #ccc;
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
